@@ -1,0 +1,200 @@
+body {
+  background: #f6f6f9;
+  color: #22223b;
+  font-family: "Segoe UI", "Arial", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  background: #222831;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.sidebar {
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(94, 96, 206, 0.08);
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #222831;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 16px rgba(94, 96, 206, 0.15);
+}
+.sidebar h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  letter-spacing: 1px;
+}
+.sidebar .contact-info {
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  color: #6c757d;
+  text-align: center;
+}
+.sidebar .contact-info a {
+  color: #5e60ce;
+  word-break: break-all;
+  text-decoration: none;
+}
+.sidebar-section {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.sidebar-section h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: #d65a31;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.sidebar-section p,
+.sidebar-section div {
+  font-size: 0.97rem;
+  color: #22223b;
+}
+.main-content {
+  padding: 2rem 2rem 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(94, 96, 206, 0.08);
+  min-height: 80vh;
+}
+.skills h5 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: #222831;
+  font-weight: 600;
+}
+.skills .progress {
+  height: 0.7rem;
+  border-radius: 0.5rem;
+  background: #e9ecef;
+  margin-bottom: 1.1rem;
+}
+.skills .progress-bar {
+  font-size: 0.85rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #393e46, #d65a31);
+  color: #fff;
+  font-weight: 600;
+}
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(94, 96, 206, 0.08);
+  border: none;
+  background: #f9f9f9;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 32px 0 rgba(31, 38, 135, 0.18);
+}
+.card-title {
+  color: #222831;
+  font-weight: 700;
+}
+.btn-primary,
+.btn-outline-primary {
+  border-radius: 2rem;
+  padding: 0.4rem 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #393e46, #d65a31);
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background: linear-gradient(90deg, #474e5a, #ca5a35);
+  color: #fff;
+}
+.footer-main {
+  background: #222831 !important;
+  color: #fff !important;
+  border-radius: 0;
+  margin-top: 0;
+  box-shadow: 0 4px 24px rgba(94, 96, 206, 0.08);
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.footer-main a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 0.5rem;
+}
+.project-card img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 12px;
+  background: transparent;
+  display: block;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 2px 8px rgba(94, 96, 206, 0.07);
+}
+/* Responsive */
+@media (max-width: 991.98px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .main-content {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .main-content,
+  .sidebar {
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .main-content,
+  .sidebar {
+    padding: 0.5rem 0.2rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.contact-form-left {
+  width: 50%;
+  min-width: 250px;
+  max-width: 400px;
+  margin-left: 0; /* Ensures left alignment */
+  margin-right: 0; /* Ensures left alignment */
+}
+
+@media (max-width: 991.98px) {
+  .contact-form-left {
+    width: 100%;
+    max-width: 100%;
+  }
+}
